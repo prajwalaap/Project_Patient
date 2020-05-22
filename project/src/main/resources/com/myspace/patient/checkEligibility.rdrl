@@ -1,0 +1,12 @@
+package com.myspace.patient;
+
+import java.lang.Number;
+
+rule "checkEligibility"
+	dialect "mvel"
+	activation-group "activate"
+	when
+		patient : Patient( age >= 65 )
+	then
+		patient.setIsElligible( true );
+end

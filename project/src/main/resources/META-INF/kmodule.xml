@@ -1,0 +1,5 @@
+<kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <kbase name="kBase2" default="true" eventProcessingMode="stream" equalsBehavior="identity" packages="com.myspace.patient">
+    <ksession name="kSession2" type="stateful" default="true" clockType="realtime"/>
+  </kbase>
+</kmodule>
